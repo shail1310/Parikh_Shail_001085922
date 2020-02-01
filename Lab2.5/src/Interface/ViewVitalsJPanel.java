@@ -70,7 +70,7 @@ public class ViewVitalsJPanel extends javax.swing.JPanel {
         btnUpdate = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("View Vital Signs");
+        jLabel1.setText("View Vital Signs of PATIENTS");
 
         tblVitalSigns.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -208,7 +208,7 @@ public class ViewVitalsJPanel extends javax.swing.JPanel {
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
          // TODO add your handling code here:
-        /* int selectedrow= tblVitalSigns.getSelectedRow();
+         int selectedrow= tblVitalSigns.getSelectedRow();
         
         if(selectedrow>=0){
             VitalSign vs = (VitalSign)tblVitalSigns.getValueAt(selectedrow,0);
@@ -221,7 +221,7 @@ public class ViewVitalsJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null,"Please Select A Row");
        
         
-     */   
+        
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
