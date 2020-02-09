@@ -27,7 +27,7 @@ public class ManageProdPanel extends javax.swing.JPanel {
     private ProductDirectory prodDir;
     
 
-    ManageProdPanel(JPanel rigJPanel, ProductDirectory prodDir) {
+    ManageProdPanel(JPanel rightPanel, ProductDirectory prodDir) {
         initComponents();
         this.prodDir=prodDir;
         this.rightPanel=rightPanel;

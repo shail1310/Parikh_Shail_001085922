@@ -180,6 +180,9 @@ public class ViewPanel extends javax.swing.JPanel {
             txtDesc.setEnabled(true);
             btnSave.setEnabled(true);
             btnUpdate.setEnabled(false);
+            
+            
+            
         
     }//GEN-LAST:event_btnUpdateActionPerformed
 
@@ -192,7 +195,14 @@ public class ViewPanel extends javax.swing.JPanel {
             btnSave.setEnabled(false);
             btnUpdate.setEnabled(true);
         
-            product.setName(txtProdName.getText());
+            
+             try{
+                  product.setName(txtProdName.getText());
+             }
+             catch (NullPointerException e){
+                 JOptionPane.showMessageDialog(null, "name can not be null");
+                 return;
+             }
             product.setPrice(Double.parseDouble(txtPrice.getText()));
             product.setAvailNum(Integer.parseInt(txtAvailablity.getText()));
             product.setDescription(txtDesc.getText());

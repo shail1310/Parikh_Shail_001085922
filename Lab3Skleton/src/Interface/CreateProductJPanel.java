@@ -141,10 +141,30 @@ public class CreateProductJPanel extends javax.swing.JPanel {
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
         // TODO add your handling code here:
-            Double.parseDouble(txtPrice.getText());
-            Integer.parseInt(txtAvailablity.getText());
+            String productPrice= txtPrice.getText();
+            try{
+                Double.parseDouble(productPrice);
+            }
+            catch(NumberFormatException e){
+                JOptionPane.showMessageDialog(null, "Please enter a number for price.");
+                return;
+            }
+            String availNum = txtAvailablity.getText();
+            try{
+                Integer.parseInt(availNum);
+            }
+            catch(NumberFormatException e){
+                JOptionPane.showMessageDialog(null, "Please enter a number for availability number.");
+                return;
+            }
+           
+            
+            
             Product prod = prodDir.addProduct();
-            prod.setName(txtProdName.getText());
+            prod.setName(txtProdName.getText());{
+            
+               
+            }
             prod.setAvailNum(Integer.parseInt(txtAvailablity.getText()));
             prod.setPrice(Double.parseDouble(txtPrice.getText()));
             prod.setDescription(txtDescription.getText());
