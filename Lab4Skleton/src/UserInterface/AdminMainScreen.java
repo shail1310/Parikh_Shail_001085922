@@ -47,6 +47,8 @@ public class AdminMainScreen extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         tableSup = new javax.swing.JTable();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         btnCreate.setText("Create User >>");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

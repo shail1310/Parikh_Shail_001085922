@@ -60,6 +60,8 @@ public class AdminCreateScreen extends javax.swing.JPanel {
         radioSupplier = new javax.swing.JRadioButton();
         btnBack = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(255, 204, 204));
+
         btnCreate.setText("Create");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
