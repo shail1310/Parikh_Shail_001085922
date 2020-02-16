@@ -45,8 +45,11 @@ public class MainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(500, 350));
 
+        panelRight.setBackground(new java.awt.Color(255, 204, 204));
         panelRight.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(panelRight);
+
+        jPanel2.setBackground(new java.awt.Color(255, 204, 204));
 
         btnAdmin.setText("Admin");
         btnAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +92,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(btnSupplier)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnCustomer)
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addContainerGap(328, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel2);
@@ -100,7 +103,7 @@ public class MainFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 393, Short.MAX_VALUE)
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
